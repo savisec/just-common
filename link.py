@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+
+"""
+Create a symlink to the justfiles directory in this repo.
+This allows other projects to use these common justfiles from source, by having a single
+clone of this repo on their system, which all other projects symlink to and import.
+This also allows faster iteration on the common justfiles, since a branch can be
+actively developed alongside a branch of another repo that depends on it.
+"""
+
 import sys
 import shutil
 from pathlib import Path

@@ -1,6 +1,6 @@
 # Just Common
 
-Common justfiles to import into project-specific justfiles.
+Common justfiles to import into project-specific justfiles. This also contains `.envrc` files intended to be used with [direnv](https://direnv.net/).
 
 # Usage
 
@@ -10,4 +10,10 @@ Include the action [setup-just](https://github.com/herdkey/github-actions/blob/e
 
 ## Local
 
-Clone this repo. Run `/path/to/this/repo/link.py` from the root of the project you intend to use it in.
+1. Install direnv and just:
+    ```shell
+    brew install direnv
+    brew install just
+    ```
+2. Clone this repo.
+3. Run `/path/to/this/repo/link.py` from the root of the project you intend to use it in. For example, from the directory `~/code/hello-go` you should run `~/code/justfiles/link.py`. This will create a symlink `.justfiles` in the root of `hello-go` which points to this repo's `justfiles/` directory.
