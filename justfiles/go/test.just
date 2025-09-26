@@ -18,8 +18,8 @@ test coverage="false":
 
 # Integration tests only
 [group('test')]
-integration-test:
-    go test "./tests/integration/..."
+integration-test suite:
+    go test "./tests/integration/{{ suite }}/..."
 
 # Lint (w/ fix if dev mode)
 [group('lint')]
