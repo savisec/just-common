@@ -1,3 +1,6 @@
+# Allow imported recipes to be overridden
+set allow-duplicate-recipes
+
 # Use bash and fail immediately on errors
 set shell := ["/usr/bin/env", "bash", "-euo", "pipefail", "-c"]
 

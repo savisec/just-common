@@ -1,5 +1,3 @@
-set allow-duplicate-recipes
-
 import '../base.just'
 import './setup.just'
 import './test.just'
