@@ -6,7 +6,7 @@ Common justfiles to import into project-specific justfiles. This also contains `
 
 ## CICD
 
-Include the action [setup-just](https://github.com/herdkey/github-actions/blob/ea2190e4bc975cc9cd1a0a0803a2b9124bde26e6/.github/actions/setup-just/action.yml#L19-L19) to install just and download this repo into a folder `.justfiles` at the root of the project.
+Include the action [setup-just](https://github.com/savisec/github-actions/blob/ea2190e4bc975cc9cd1a0a0803a2b9124bde26e6/.github/actions/setup-just/action.yml#L19-L19) to install just and download this repo into a folder `.justfiles` at the root of the project.
 
 ## Local
 
