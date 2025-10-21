@@ -11,4 +11,6 @@ permissions:
 jobs:
   tag:
     name: Tag
-    uses: savisec/github-actions/.github/workflows/tag.yml@v1
+    uses: savisec/github-actions/.github/workflows/tag.yml@v1.2
+    secrets:
+      TAGGER_APP_PRIVATE_KEY: ${{ secrets.TAGGER_APP_PRIVATE_KEY }}
