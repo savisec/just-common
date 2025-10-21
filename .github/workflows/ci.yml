@@ -5,12 +5,10 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
   tag:
     name: Tag
     uses: savisec/github-actions/.github/workflows/tag.yml@v1.2
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     secrets:
       TAGGER_APP_PRIVATE_KEY: ${{ secrets.TAGGER_APP_PRIVATE_KEY }}
